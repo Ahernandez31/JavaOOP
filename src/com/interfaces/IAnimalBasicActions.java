@@ -8,7 +8,6 @@ public interface IAnimalBasicActions {
 	public String eat(String food);
 	public String sleep(int time);
 	public void setDayToEat(Days day);
-	//TODO: 07.- Create the getter getDayToEat();
 	public Days getDayToEat();
 	
 }

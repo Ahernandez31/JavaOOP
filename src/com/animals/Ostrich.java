@@ -16,32 +16,26 @@ public class Ostrich extends Animal implements IAnimalBasicActions, IWings{
 	public void setSound(String sound) {
 		this.sound = sound;
 	}
-
 	@Override
 	public String getSound() {
 		return sound;
 	}
-
 	@Override
 	public String eat(String food) {
 		return "I am an ostrich and i am eating " + food;
 	}
-
 	@Override
 	public String sleep(int time) {
 		return "I am an ostrich and i am sleeping " + time;
 	}
-
 	@Override
 	public boolean fly() {
 		return false;
 	}
-
 	@Override
 	public int getWingsNumber() {
 		return wingsNumber;
 	}
-
 	@Override
 	public void setWingsNumber(int number) {
 		this.wingsNumber = number;
@@ -62,15 +56,5 @@ public class Ostrich extends Animal implements IAnimalBasicActions, IWings{
 	public Days getDayToEat() {
 		return this.day;
 	}
-
-	public Days getDay() {
-		return day;
-	}
-
-	public void setDay(Days day) {
-		this.day = day;
-	}
-	
-	
 	
 }
