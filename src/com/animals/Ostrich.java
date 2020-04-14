@@ -7,8 +7,7 @@ import com.interfaces.*;
 public class Ostrich extends Animal implements IAnimalBasicActions, IWings{
 
 	public int wingsNumber;
-	//TODO: 08.- Declare a Days variable named day.
-	
+	public Days day;
 	public Ostrich(String name) {
 		super(name);
 	}
@@ -51,11 +50,27 @@ public class Ostrich extends Animal implements IAnimalBasicActions, IWings{
 	
 	@Override
 	public String toString() {
-		//TODO: 10.- Modify this return to include the day the ostrich eats.
-		return "This is the Ostrich class, and i am " + name + " Do i fly? " + fly();
+		return "This is the Ostrich class, and i am " + name + " Do i fly? " + fly()+" and I eat on: "+day;
+	}
+
+	@Override
+	public void setDayToEat(Days day) {
+		this.day=day;
+	}
+
+	@Override
+	public Days getDayToEat() {
+		return this.day;
+	}
+
+	public Days getDay() {
+		return day;
+	}
+
+	public void setDay(Days day) {
+		this.day = day;
 	}
 	
-	//TODO: 09.- Implement the required set and get methods for Ostrich.
 	
 	
 }
