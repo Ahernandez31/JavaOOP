@@ -1,5 +1,5 @@
 package com.enums;
-
+//TEST
 //TODO: 01.- Change this generic class to an enum class.
 public class Days {
 	
